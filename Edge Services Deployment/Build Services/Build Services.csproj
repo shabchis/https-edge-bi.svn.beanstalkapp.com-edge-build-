@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7466FD20-A838-4359-8620-273FDE4E5470}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Build_Project</RootNamespace>
+    <AssemblyName>Build Project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\Deployment\Edge-Services\Services</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+	  <UseAppConfigForCompiler>false</UseAppConfigForCompiler>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Framework\Edge.Core.Scheduling\Edge.Core.Scheduling.csproj">
+      <Project>{E700E7AA-08B7-44C3-8889-ACB4FAF92C90}</Project>
+      <Name>Edge.Core.Scheduling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Framework\Edge.Core\Edge.Core.csproj">
+      <Project>{AD4B53AD-B28A-4E90-9483-D2F7C8E6D436}</Project>
+      <Name>Edge.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Framework\Edge.Data.Pipeline\Edge.Data.Pipeline.csproj">
+      <Project>{53391A99-E8CA-4262-A8E0-5F05A1CC6608}</Project>
+      <Name>Edge.Data.Pipeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.AdMetrics\Edge.Services.AdMetrics.csproj">
+      <Project>{36B6740D-938E-4994-9A0D-2DCB94D032B6}</Project>
+      <Name>Edge.Services.AdMetrics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.Facebook.AdsApi\Edge.Services.Facebook.AdsApi.csproj">
+      <Project>{71263B26-33FD-4E0E-8843-B94842818BA0}</Project>
+      <Name>Edge.Services.Facebook.AdsApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.Google.AdWords\Edge.Services.Google.AdWords.csproj">
+      <Project>{2A0FFCF9-03B8-40E4-B410-8B62B088B6D6}</Project>
+      <Name>Edge.Services.Google.AdWords</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'Release' ">
+    <Delete Files="$(OutputPath)$(TargetFileName)" />
+    <!--<Delete Files="$(OutputPath)$(TargetFileName).config" />-->
+    <Delete Files="$(OutputPath)$(TargetName).pdb" />
+    <ItemGroup>
+      <DeleteAfterBuild Include="$(OutputPath)*.xml" />
+    </ItemGroup>
+    <Delete Files="@(DeleteAfterBuild)" />
+  </Target>
+</Project>
