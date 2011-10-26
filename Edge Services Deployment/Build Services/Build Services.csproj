@@ -44,11 +44,11 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\..\..\Deployment\Edge-Services\Services</OutputPath>
+    <OutputPath>..\..\..\..\..\Deployment\EDGE1\Seperia\2.9\Services\Services</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-	  <UseAppConfigForCompiler>false</UseAppConfigForCompiler>
+    <UseAppConfigForCompiler>false</UseAppConfigForCompiler>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
@@ -73,6 +73,10 @@
     <ProjectReference Include="..\..\..\Services\Edge.Services.Facebook.AdsApi\Edge.Services.Facebook.AdsApi.csproj">
       <Project>{71263B26-33FD-4E0E-8843-B94842818BA0}</Project>
       <Name>Edge.Services.Facebook.AdsApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.Facebook.GraphApi\Edge.Services.Facebook.GraphApi.csproj">
+      <Project>{0CA66633-F417-4724-9FC5-5F8C6E1D72B5}</Project>
+      <Name>Edge.Services.Facebook.GraphApi</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Services\Edge.Services.Google.AdWords\Edge.Services.Google.AdWords.csproj">
       <Project>{2A0FFCF9-03B8-40E4-B410-8B62B088B6D6}</Project>
