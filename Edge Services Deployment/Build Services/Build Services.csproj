@@ -70,17 +70,17 @@
       <Project>{36B6740D-938E-4994-9A0D-2DCB94D032B6}</Project>
       <Name>Edge.Services.AdMetrics</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Services\Edge.Services.Facebook.AdsApi\Edge.Services.Facebook.AdsApi.csproj">
-      <Project>{71263B26-33FD-4E0E-8843-B94842818BA0}</Project>
-      <Name>Edge.Services.Facebook.AdsApi</Name>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.BackOffice.EasyForex\Edge.Services.BackOffice.EasyForex.csproj">
+      <Project>{E87CD0B6-873B-43D2-88DB-BC2D7C56F09E}</Project>
+      <Name>Edge.Services.BackOffice.EasyForex</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Services\Edge.Services.Facebook.GraphApi\Edge.Services.Facebook.GraphApi.csproj">
       <Project>{0CA66633-F417-4724-9FC5-5F8C6E1D72B5}</Project>
       <Name>Edge.Services.Facebook.GraphApi</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Services\Edge.Services.Google.AdWords\Edge.Services.Google.AdWords.csproj">
-      <Project>{2A0FFCF9-03B8-40E4-B410-8B62B088B6D6}</Project>
-      <Name>Edge.Services.Google.AdWords</Name>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.Google.Adwords.V201109\Edge.Services.Google.AdWords.V201109.csproj">
+      <Project>{DFC1976B-10A9-4E74-8C61-48FA5732766E}</Project>
+      <Name>Edge.Services.Google.AdWords.V201109</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
