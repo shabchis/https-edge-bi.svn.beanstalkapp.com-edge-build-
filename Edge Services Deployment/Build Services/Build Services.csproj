@@ -30,17 +30,17 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>false</BootstrapperEnabled>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Edge|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\Deployment\EDGE1\Edge.BI\2.9\Services\Services</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseAppConfigForCompiler>false</UseAppConfigForCompiler>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Seperia|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
@@ -66,6 +66,10 @@
       <Project>{53391A99-E8CA-4262-A8E0-5F05A1CC6608}</Project>
       <Name>Edge.Data.Pipeline</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.AdMetrics.Validations\Edge.Services.AdMetrics.Validations.csproj">
+      <Project>{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}</Project>
+      <Name>Edge.Services.AdMetrics.Validations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Services\Edge.Services.AdMetrics\Edge.Services.AdMetrics.csproj">
       <Project>{36B6740D-938E-4994-9A0D-2DCB94D032B6}</Project>
       <Name>Edge.Services.AdMetrics</Name>
@@ -74,13 +78,33 @@
       <Project>{E87CD0B6-873B-43D2-88DB-BC2D7C56F09E}</Project>
       <Name>Edge.Services.BackOffice.EasyForex</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.BackOffice.Generic\Edge.Services.BackOffice.Generic.csproj">
+      <Project>{2AAA976A-3BE0-4A44-9A74-6406C02E1BB8}</Project>
+      <Name>Edge.Services.BackOffice.Generic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Services\Edge.Services.Facebook.GraphApi\Edge.Services.Facebook.GraphApi.csproj">
       <Project>{0CA66633-F417-4724-9FC5-5F8C6E1D72B5}</Project>
       <Name>Edge.Services.Facebook.GraphApi</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.FTP\Edge.Services.FTP.csproj">
+      <Project>{632805D5-EF7D-4741-B161-6693EC75938B}</Project>
+      <Name>Edge.Services.FTP</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Services\Edge.Services.Google.Adwords.V201109\Edge.Services.Google.AdWords.V201109.csproj">
       <Project>{DFC1976B-10A9-4E74-8C61-48FA5732766E}</Project>
       <Name>Edge.Services.Google.AdWords.V201109</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.Microsoft.AdCenter\Edge.Services.Microsoft.AdCenter.csproj">
+      <Project>{C73E557C-2B70-4040-9FA5-5AA2C0A95717}</Project>
+      <Name>Edge.Services.Microsoft.AdCenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.SegmentMetrics.Validations\Edge.Services.SegmentMetrics.Validations.csproj">
+      <Project>{7CBBE059-4A66-4DFF-81C7-EDA1D7094218}</Project>
+      <Name>Edge.Services.SegmentMetrics.Validations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Services\Edge.Services.SegmentMetrics\Edge.Services.SegmentMetrics.csproj">
+      <Project>{90C8D5F3-B580-41C4-9567-E06B14772D24}</Project>
+      <Name>Edge.Services.SegmentMetrics</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -106,7 +130,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'Release' ">
+  <Target Name="AfterBuild">
     <Delete Files="$(OutputPath)$(TargetFileName)" />
     <!--<Delete Files="$(OutputPath)$(TargetFileName).config" />-->
     <Delete Files="$(OutputPath)$(TargetName).pdb" />
