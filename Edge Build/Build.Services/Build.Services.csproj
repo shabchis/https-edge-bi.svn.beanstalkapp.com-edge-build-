@@ -70,6 +70,10 @@
       <Project>{53391A99-E8CA-4262-A8E0-5F05A1CC6608}</Project>
       <Name>Edge.Data.Pipeline</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\edge-services\Edge.Services.AdMetrics.Validations\trunk\Edge.Services.AdMetrics.Validations.csproj">
+      <Project>{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}</Project>
+      <Name>Edge.Services.AdMetrics.Validations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\edge-services\Edge.Services.BackOffice.EasyForex\trunk\Edge.Services.BackOffice.EasyForex.csproj">
       <Project>{E87CD0B6-873B-43D2-88DB-BC2D7C56F09E}</Project>
       <Name>Edge.Services.BackOffice.EasyForex</Name>
@@ -116,9 +120,6 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="AfterBuild">
