@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Data.Pipeline.Metrics"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Services.Google.Analytics", "..\..\edge-services\Edge.Services.Google.Analytics\trunk\Edge.Services.Google.Analytics.csproj", "{C2150589-9BB4-4143-BD60-3BF5AC013972}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Services.AdMetrics.Validations", "..\..\edge-services\Edge.Services.AdMetrics.Validations\trunk\Edge.Services.AdMetrics.Validations.csproj", "{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -348,6 +350,31 @@ Global
 		{C2150589-9BB4-4143-BD60-3BF5AC013972}.Seperia|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{C2150589-9BB4-4143-BD60-3BF5AC013972}.Seperia|Mixed Platforms.Build.0 = Release|Any CPU
 		{C2150589-9BB4-4143-BD60-3BF5AC013972}.Seperia|x86.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Edge.BI|Any CPU.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Edge.BI|Any CPU.Build.0 = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Edge.BI|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Edge.BI|Mixed Platforms.Build.0 = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Edge.BI|x86.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Release|x86.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Seperia.Facebook.UpdateCampaignStatus|Any CPU.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Seperia.Facebook.UpdateCampaignStatus|Any CPU.Build.0 = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Seperia.Facebook.UpdateCampaignStatus|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Seperia.Facebook.UpdateCampaignStatus|Mixed Platforms.Build.0 = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Seperia.Facebook.UpdateCampaignStatus|x86.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Seperia|Any CPU.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Seperia|Any CPU.Build.0 = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Seperia|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Seperia|Mixed Platforms.Build.0 = Release|Any CPU
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE}.Seperia|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -359,6 +386,7 @@ Global
 		{DFC1976B-10A9-4E74-8C61-48FA5732766E} = {375B1764-4780-4C6C-BB0D-23F51FAA04FB}
 		{2AAA976A-3BE0-4A44-9A74-6406C02E1BB8} = {375B1764-4780-4C6C-BB0D-23F51FAA04FB}
 		{C2150589-9BB4-4143-BD60-3BF5AC013972} = {375B1764-4780-4C6C-BB0D-23F51FAA04FB}
+		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE} = {375B1764-4780-4C6C-BB0D-23F51FAA04FB}
 		{E700E7AA-08B7-44C3-8889-ACB4FAF92C90} = {F9074B4D-5197-40BF-85B6-B498740C818B}
 		{AD4B53AD-B28A-4E90-9483-D2F7C8E6D436} = {F9074B4D-5197-40BF-85B6-B498740C818B}
 		{53391A99-E8CA-4262-A8E0-5F05A1CC6608} = {F9074B4D-5197-40BF-85B6-B498740C818B}
