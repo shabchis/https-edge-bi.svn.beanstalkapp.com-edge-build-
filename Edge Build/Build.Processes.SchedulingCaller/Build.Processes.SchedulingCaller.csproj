@@ -65,14 +65,20 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="AfterBuild">
-    <Delete Files="$(OutputPath)$(TargetFileName)" />
-    <!--<Delete Files="$(OutputPath)$(TargetFileName).config" />-->
-    <Delete Files="$(OutputPath)$(TargetName).pdb" />
-    <ItemGroup>
-      <DeleteAfterBuild Include="$(OutputPath)*.xml" />
-    </ItemGroup>
-    <Delete Files="@(DeleteAfterBuild)" />
-  </Target>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\edge-processes\Edge.Processes.SchedulingCaller\trunk\Edge.Processes.SchedulingCaller.csproj">
+      <Project>{D38C000D-2899-41D6-892B-4A431FB0DDBF}</Project>
+      <Name>Edge.Processes.SchedulingCaller</Name>
+    </ProjectReference>
+  </ItemGroup>
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+	<Target Name="AfterBuild">
+		<Delete Files="$(OutputPath)$(TargetFileName)" />
+		<!--<Delete Files="$(OutputPath)$(TargetFileName).config" />-->
+		<Delete Files="$(OutputPath)$(TargetName).pdb" />
+		<ItemGroup>
+			<DeleteAfterBuild Include="$(OutputPath)*.xml" />
+		</ItemGroup>
+		<Delete Files="@(DeleteAfterBuild)" />
+	</Target>
 </Project>

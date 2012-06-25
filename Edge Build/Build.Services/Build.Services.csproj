@@ -86,6 +86,10 @@
       <Project>{0CA66633-F417-4724-9FC5-5F8C6E1D72B5}</Project>
       <Name>Edge.Services.Facebook.GraphApi</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\edge-services\Edge.Services.GenericMetrics.Validations\trunk\Edge.Services.GenericMetrics.Validations.csproj">
+      <Project>{7CBBE059-4A66-4DFF-81C7-EDA1D7094218}</Project>
+      <Name>Edge.Services.GenericMetrics.Validations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\edge-services\Edge.Services.Google.AdWords.V201109\trunk\Edge.Services.Google.AdWords.V201109.csproj">
       <Project>{DFC1976B-10A9-4E74-8C61-48FA5732766E}</Project>
       <Name>Edge.Services.Google.AdWords.V201109</Name>
