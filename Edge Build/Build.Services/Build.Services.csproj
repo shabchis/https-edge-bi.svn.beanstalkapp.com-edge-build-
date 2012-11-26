@@ -90,9 +90,9 @@
       <Project>{7CBBE059-4A66-4DFF-81C7-EDA1D7094218}</Project>
       <Name>Edge.Services.GenericMetrics.Validations</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\edge-services\Edge.Services.Google.AdWords.V201109\trunk\Edge.Services.Google.AdWords.V201109.csproj">
-      <Project>{DFC1976B-10A9-4E74-8C61-48FA5732766E}</Project>
-      <Name>Edge.Services.Google.AdWords.V201109</Name>
+    <ProjectReference Include="..\..\..\edge-services\Edge.Services.Google.AdWords\trunk\Edge.Services.Google.AdWords.csproj">
+      <Project>{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}</Project>
+      <Name>Edge.Services.Google.AdWords</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\edge-services\Edge.Services.Google.Analytics\trunk\Edge.Services.Google.Analytics.csproj">
       <Project>{C2150589-9BB4-4143-BD60-3BF5AC013972}</Project>
@@ -101,6 +101,10 @@
     <ProjectReference Include="..\..\..\edge-services\Edge.Services.Microsoft.AdCenter\trunk\Edge.Services.Microsoft.AdCenter.csproj">
       <Project>{C73E557C-2B70-4040-9FA5-5AA2C0A95717}</Project>
       <Name>Edge.Services.Microsoft.AdCenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\edge-services\Edge.Services.SalesForce\Edge.Services.SalesForce.csproj">
+      <Project>{C4C1D909-D765-42AD-8FA8-F51A3D93457D}</Project>
+      <Name>Edge.Services.SalesForce</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
