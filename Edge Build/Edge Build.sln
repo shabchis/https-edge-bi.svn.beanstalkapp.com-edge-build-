@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{375B1764-4780-4C6C-BB0D-23F51FAA04FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Core", "..\..\edge-framework\Edge.Core\trunk\Edge.Core.csproj", "{AD4B53AD-B28A-4E90-9483-D2F7C8E6D436}"
@@ -47,9 +47,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Build.Scheduler", "Built.Sc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Services.GenericMetrics.Validations", "..\..\edge-services\Edge.Services.GenericMetrics.Validations\trunk\Edge.Services.GenericMetrics.Validations.csproj", "{7CBBE059-4A66-4DFF-81C7-EDA1D7094218}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Services.Google.AdWords", "..\..\edge-services\Edge.Services.Google.AdWords\trunk\Edge.Services.Google.AdWords.csproj", "{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Services.SalesForce", "..\..\edge-services\Edge.Services.SalesForce\Edge.Services.SalesForce.csproj", "{C4C1D909-D765-42AD-8FA8-F51A3D93457D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Services.Google.AdWords.V201302", "..\..\edge-services\Google.Adwords.V201302\trunk\Edge.Services.Google.AdWords.V201302.csproj", "{4EAEB38D-BB85-433A-99DE-23B722316AEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -613,36 +613,6 @@ Global
 		{7CBBE059-4A66-4DFF-81C7-EDA1D7094218}.Seperia|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{7CBBE059-4A66-4DFF-81C7-EDA1D7094218}.Seperia|Mixed Platforms.Build.0 = Release|Any CPU
 		{7CBBE059-4A66-4DFF-81C7-EDA1D7094218}.Seperia|x86.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Edge.BI|Any CPU.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Edge.BI|Any CPU.Build.0 = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Edge.BI|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Edge.BI|Mixed Platforms.Build.0 = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Edge.BI|x86.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Edge|Any CPU.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Edge|Any CPU.Build.0 = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Edge|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Edge|Mixed Platforms.Build.0 = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Edge|x86.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Release|x86.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Seperia.Facebook.UpdateCampaignStatus|Any CPU.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Seperia.Facebook.UpdateCampaignStatus|Any CPU.Build.0 = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Seperia.Facebook.UpdateCampaignStatus|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Seperia.Facebook.UpdateCampaignStatus|Mixed Platforms.Build.0 = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Seperia.Facebook.UpdateCampaignStatus|x86.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Seperia|Any CPU.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Seperia|Any CPU.Build.0 = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Seperia|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Seperia|Mixed Platforms.Build.0 = Release|Any CPU
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC}.Seperia|x86.ActiveCfg = Release|Any CPU
 		{C4C1D909-D765-42AD-8FA8-F51A3D93457D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C4C1D909-D765-42AD-8FA8-F51A3D93457D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4C1D909-D765-42AD-8FA8-F51A3D93457D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -673,6 +643,36 @@ Global
 		{C4C1D909-D765-42AD-8FA8-F51A3D93457D}.Seperia|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{C4C1D909-D765-42AD-8FA8-F51A3D93457D}.Seperia|Mixed Platforms.Build.0 = Release|Any CPU
 		{C4C1D909-D765-42AD-8FA8-F51A3D93457D}.Seperia|x86.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Edge.BI|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Edge.BI|Any CPU.Build.0 = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Edge.BI|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Edge.BI|Mixed Platforms.Build.0 = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Edge.BI|x86.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Edge|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Edge|Any CPU.Build.0 = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Edge|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Edge|Mixed Platforms.Build.0 = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Edge|x86.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Release|x86.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Seperia.Facebook.UpdateCampaignStatus|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Seperia.Facebook.UpdateCampaignStatus|Any CPU.Build.0 = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Seperia.Facebook.UpdateCampaignStatus|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Seperia.Facebook.UpdateCampaignStatus|Mixed Platforms.Build.0 = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Seperia.Facebook.UpdateCampaignStatus|x86.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Seperia|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Seperia|Any CPU.Build.0 = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Seperia|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Seperia|Mixed Platforms.Build.0 = Release|Any CPU
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB}.Seperia|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -694,8 +694,8 @@ Global
 		{C6504C8B-C482-41B9-BC6E-BEF92AF9D6FE} = {375B1764-4780-4C6C-BB0D-23F51FAA04FB}
 		{0CA66633-F417-4724-9FC5-5F8C6E1D72B5} = {375B1764-4780-4C6C-BB0D-23F51FAA04FB}
 		{7CBBE059-4A66-4DFF-81C7-EDA1D7094218} = {375B1764-4780-4C6C-BB0D-23F51FAA04FB}
-		{4A3BA0DD-95E7-4DCC-B1D5-F5A55482A2AC} = {375B1764-4780-4C6C-BB0D-23F51FAA04FB}
 		{C4C1D909-D765-42AD-8FA8-F51A3D93457D} = {375B1764-4780-4C6C-BB0D-23F51FAA04FB}
+		{4EAEB38D-BB85-433A-99DE-23B722316AEB} = {375B1764-4780-4C6C-BB0D-23F51FAA04FB}
 		{FB21EF04-FB87-484C-B15E-DCEBD1185977} = {3C1146CC-AEA6-41A2-B0CD-B6F7F306C890}
 		{D38C000D-2899-41D6-892B-4A431FB0DDBF} = {3C1146CC-AEA6-41A2-B0CD-B6F7F306C890}
 	EndGlobalSection
