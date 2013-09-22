@@ -102,10 +102,6 @@
       <Project>{C4C1D909-D765-42AD-8FA8-F51A3D93457D}</Project>
       <Name>Edge.Services.SalesForce</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\edge-services\Google.Adwords.V201302\trunk\Edge.Services.Google.AdWords.V201302.csproj">
-      <Project>{4eaeb38d-bb85-433a-99de-23b722316aeb}</Project>
-      <Name>Edge.Services.Google.AdWords.V201302</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">

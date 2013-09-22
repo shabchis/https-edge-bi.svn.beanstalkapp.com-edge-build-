@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{375B1764-4780-4C6C-BB0D-23F51FAA04FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Core", "..\..\edge-framework\Edge.Core\trunk\Edge.Core.csproj", "{AD4B53AD-B28A-4E90-9483-D2F7C8E6D436}"
@@ -49,7 +49,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Services.GenericMetric
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Services.SalesForce", "..\..\edge-services\Edge.Services.SalesForce\Edge.Services.SalesForce.csproj", "{C4C1D909-D765-42AD-8FA8-F51A3D93457D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Services.Google.AdWords.V201302", "..\..\edge-services\Google.Adwords.V201302\trunk\Edge.Services.Google.AdWords.V201302.csproj", "{4EAEB38D-BB85-433A-99DE-23B722316AEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edge.Services.Google.AdWords", "..\..\edge-services\Edge.Services.Google.AdWords\trunk\Edge.Services.Google.AdWords.csproj", "{4EAEB38D-BB85-433A-99DE-23B722316AEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
