@@ -37,6 +37,18 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+    
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'EdgeQA|x86'">
+    <OutputPath>..\..\..\deployment\EDGE1\Seperia\2.9.1QA\Services</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  
+  
   <ItemGroup>
     <ProjectReference Include="..\..\..\utilities\Edge.Applications.TempScheduler %282.9%29\trunk\Edge.Applications.TempScheduler.csproj">
       <Project>{1C3E1103-65B9-48D0-8583-A38B0AD6E771}</Project>
