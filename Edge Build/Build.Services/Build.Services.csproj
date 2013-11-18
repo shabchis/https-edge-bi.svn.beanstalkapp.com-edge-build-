@@ -50,6 +50,16 @@
     <WarningLevel>4</WarningLevel>
     <UseAppConfigForCompiler>false</UseAppConfigForCompiler>
   </PropertyGroup>
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EdgeQA|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\deployment\EDGE1\Seperia\2.9.1QA\Services\Services</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseAppConfigForCompiler>false</UseAppConfigForCompiler>
+  </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
@@ -101,6 +111,10 @@
     <ProjectReference Include="..\..\..\edge-services\Edge.Services.SalesForce\Edge.Services.SalesForce.csproj">
       <Project>{C4C1D909-D765-42AD-8FA8-F51A3D93457D}</Project>
       <Name>Edge.Services.SalesForce</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\edge-services\Google.Adwords.V201302\trunk\Edge.Services.Google.AdWords.V201309.csproj">
+      <Project>{4eaeb38d-bb85-433a-99de-23b722316aeb}</Project>
+      <Name>Edge.Services.Google.AdWords.V201309</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
